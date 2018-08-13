@@ -1,0 +1,14 @@
+html{
+    font-size: 100px;
+}
+body,img{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    background: url(../img/Photo84.jpg);
+    background-size:100%; 
+    width: 19.2rem;
+    height: 10.8rem;
+}

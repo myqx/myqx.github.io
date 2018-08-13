@@ -1,0 +1,269 @@
+.flex_main {
+    display: flex;
+    flex-direction: row;
+    width: 19.2rem;
+    height: 10.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 4.8rem;
+}
+
+.flex_nav div {
+    width: 1.6rem;
+    height: 1.6rem;
+    box-sizing: border-box;
+    border: 3px rgb(114, 108, 108) solid;
+    font-size: 0.2rem;
+    color: rgb(248, 250, 248);
+    background: url(../img/Photo40.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+/* =======================================弹框========================================== */
+
+.popup_win {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19.2rem;
+    height: 10.8rem;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_content {
+    position: relative;
+    width: 15rem;
+    height: 8.4375rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/* =======================================关闭弹框按钮========================================== */
+
+.close_popup {
+    position: absolute;
+    right: 0.15rem;
+    top: 0.15rem;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 999999;
+}
+
+.close_popup:hover {
+    border: 2px solid rgb(223, 15, 15);
+    color: red;
+    cursor: pointer;
+}
+
+/* ==========popup_content弹框左侧========== */
+
+.pop_left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 5rem;
+    box-sizing: border-box;
+    border-top: 0.1rem solid rgb(116, 149, 150);
+    border-bottom: 0.2rem solid rgb(116, 149, 150);
+    border-left: 0.1rem solid rgb(116, 149, 150);
+    border-right: 0.05rem solid rgb(116, 149, 150);
+}
+
+.left_top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    border-bottom: 0.1rem rgb(184, 183, 189) solid;
+}
+
+.left_top img {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.left_top img:nth-child(odd) {
+    border-top: 0.1rem solid rgba(145, 141, 141, .05);
+    border-left: 0.1rem solid rgba(145, 141, 141, .05);
+    border-right: 0.05rem solid rgba(145, 141, 141, .05);
+}
+
+.left_top img:nth-child(even) {
+    border-top: 0.1rem solid rgba(145, 141, 141, .05);
+    border-left: 0.05rem solid rgba(145, 141, 141, .05);
+    border-right: 0.1rem solid rgba(145, 141, 141, .05);
+}
+
+.left_top img:nth-last-child(2),
+.left_top img:last-child {
+    border-bottom: 0.1rem solid rgba(145, 141, 141, .05);
+}
+
+.left_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1rem;
+    font-size: 0.16rem;
+}
+
+.left_bottom button {
+    padding: 0;
+    outline: none;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.left_bottom input {
+    padding: 0;
+    outline: none;
+    border: none;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+.left_bottom .current_page,
+.left_bottom .totall_page {
+    background: rgb(167, 164, 164);
+}
+
+/* ===========popup_content弹框右侧============ */
+
+.pop_right {
+    width: 10rem;
+    box-sizing: border-box;
+    border-top: 0.1rem solid rgb(116, 149, 150);
+    border-right: 0.1rem solid rgb(116, 149, 150);
+    border-bottom: 0.2rem solid rgb(116, 149, 150);
+    border-left: 0.05rem solid rgb(116, 149, 150);
+}
+
+.pop_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.6rem;
+    border-bottom: 0.1rem solid rgb(184, 183, 189);
+}
+
+.pop_nav button {
+    width: 1rem;
+    height: 0.6rem;
+    padding: 0;
+    font-size: 0.2rem;
+    color: rgb(193, 184, 197);
+    margin: 0 0.1rem 0 0.1rem;
+    border-radius: 0.3rem;
+    background: none;
+    outline: none;
+    border: 0.03rem rgb(179, 175, 187) solid;
+}
+
+.pop_nav button:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.pop_nav .active {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.right_content {
+    width: 100%;
+    height: 6.42rem;
+}
+
+.picture,
+.video,
+.music,
+.sumUp,
+.others,
+.myInf {
+    flex-direction: row;
+    display: none;  
+}
+
+/* =====================picture===================== */
+.picture {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.right_content .picture div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+}
+
+.picture span:nth-child(1) {
+    position: absolute;
+    left: 0.5rem;
+    color: rgb(250, 246, 246);
+    font-size: 0.5rem;
+}
+.picture span:nth-child(3) {
+    position: absolute;
+    right: 0.5rem;
+    color: rgb(253, 252, 252);
+    font-size: 0.5rem;
+}
+.picture img {
+    border: 0.05rem solid rgb(204, 204, 195);
+    width: 100%;
+}
+/* =================video======================= */
+
+.video{
+    justify-content: center;
+    height: 100%;
+}
+.right_content .video>div {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 0.3rem solid rgba(236, 236, 243,0); 
+    align-items: flex-start;
+    width: 10rem;
+}
+.vi_ctrl{
+    color: white;
+    font-size: 0.2rem;
+    background: rgba(90, 4, 90, 0.5);
+    height: 0.6rem;
+    width: 100%;
+}
+.video video {
+    width: 100%;
+}
