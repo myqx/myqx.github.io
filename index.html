@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>myqx</title>
+
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="flex_main">
+			<div class="flex_nav">
+				<div>picture</div>
+				<div>video</div>
+				<div>music</div>
+				<div>sumUp</div>
+				<div>others</div>
+				<div>myInf</div>
+			</div>
+		</div>
+
+		<!-- 弹框 -->
+		<div class="popup_win">
+
+			<div class="popup_content">
+				<!-- 关闭弹框按钮 -->
+				<div class="close_popup">X</div>
+
+				<div class="pop_left">
+
+					<div class="left_top"></div>
+
+					<div class="left_bottom">
+						<div>
+							<button class="up_page">上一页</button>
+							<input class="current_page" type="text" readonly value="1">
+							<input class="totall_page" type="text" readonly value="1">
+							<button class="next_page">下一页</button>
+							<input class="Jump_page" type="text" value="">
+							<button class="Jump">跳转</button>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="pop_right">
+					<div class="pop_nav">
+						<button>picture</button>
+						<button>video</button>
+						<button>music</button>
+						<button>sumUp</button>
+						<button>others</button>
+						<button>myInf</button>
+					</div>
+					<div class="right_content">
+						<div class="picture">
+							<div>
+								<span>←</span>
+								<img alt="">
+								<span>→</span>
+							</div>
+						</div>
+						<div class="video">
+							<div>
+								<video controls src="video/myqx_20180715010813924.mp4"></video>
+								<div class="vi_ctrl">0000</div>
+							</div>
+						</div>
+						<div class="music">
+							<div>
+								<audio controls src="audio/晴愔 - 眉间雪(剧情歌).mp3"></audio>
+							</div>
+						</div>
+						<div class="sumUp">sumUp</div>
+						<div class="others">others</div>
+						<div class="myInf">myInf</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="node_modules/jquery.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
